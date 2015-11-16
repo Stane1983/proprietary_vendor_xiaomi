@@ -428,17 +428,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
     vendor/xiaomi/cancro/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
-    vendor/xiaomi/cancro/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libdrmtime.so:system/vendor/lib/libdrmtime.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
+    vendor/xiaomi/cancro/proprietary/lib/libdrmdiag.so:system/lib/libdrmdiag.so \
+    vendor/xiaomi/cancro/proprietary/lib/libdrmfs.so:system/lib/libdrmfs.so \
+    vendor/xiaomi/cancro/proprietary/lib/libdrmtime.so:system/lib/libdrmtime.so \
+    vendor/xiaomi/cancro/proprietary/lib/libQSEEComAPI.so:system/lib/libQSEEComAPI.so \
+    vendor/xiaomi/cancro/proprietary/lib/librpmb.so:system/lib/librpmb.so \
+    vendor/xiaomi/cancro/proprietary/lib/libssd.so:system/lib/libssd.so \
+    vendor/xiaomi/cancro/proprietary/lib/drm/libdrmwvmplugin.so:system/lib/drm/libdrmwvmplugin.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/liboemcrypto.so:system/vendor/lib/liboemcrypto.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/cancro/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/xiaomi/cancro/proprietary/bin/qosmgr:system/bin/qosmgr \
