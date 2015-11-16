@@ -292,8 +292,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/bcm2079x-b5_firmware.ncd:system/vendor/firmware/bcm2079x-b5_firmware.ncd \
     vendor/xiaomi/cancro/proprietary/vendor/firmware/bcm2079x-b5_pre_firmware.ncd:system/vendor/firmware/bcm2079x-b5_pre_firmware.ncd \
     vendor/xiaomi/cancro/proprietary/bin/mpdecision:system/bin/mpdecision \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
+    vendor/xiaomi/cancro/proprietary/bin/thermal-engine:system/bin/thermal-engine \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
+    vendor/xiaomi/cancro/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/xiaomi/cancro/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libfastcvadsp_stub.so:system/vendor/lib/libfastcvadsp_stub.so \
@@ -309,14 +316,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
+    vendor/xiaomi/cancro/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/xiaomi/cancro/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
     vendor/xiaomi/cancro/proprietary/bin/quipc_main:system/bin/quipc_main \
     vendor/xiaomi/cancro/proprietary/bin/quipc_igsn:system/bin/quipc_igsn \
     vendor/xiaomi/cancro/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
-    vendor/xiaomi/cancro/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
     vendor/xiaomi/cancro/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/xiaomi/cancro/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
-    vendor/xiaomi/cancro/proprietary/lib/libcommonpawrapper.so:system/lib/libcommonpawrapper.so \
+    vendor/xiaomi/cancro/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
+    vendor/xiaomi/cancro/proprietary/lib/libloc_core.so:system/lib/libloc_core.so \
+    vendor/xiaomi/cancro/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
+    vendor/xiaomi/cancro/proprietary/lib/hw/gps.msm8974.so:system/lib/hw/gps.msm8974.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
@@ -347,26 +357,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
     vendor/xiaomi/cancro/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libmmparser.so:system/vendor/lib/libmmparser.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
-    vendor/xiaomi/cancro/proprietary/lib/libOmxVdec.so:system/lib/libOmxVdec.so \
-    vendor/xiaomi/cancro/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
-    vendor/xiaomi/cancro/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/xiaomi/cancro/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libdsnetutils.so:system/vendor/lib/libdsnetutils.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -389,13 +395,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/xiaomi/cancro/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
     vendor/xiaomi/cancro/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/xiaomi/cancro/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/xiaomi/cancro/proprietary/bin/sensors.qcom:system/bin/sensors.qcom \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libAKM8963.so:system/vendor/lib/libAKM8963.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/hw/sensors.msm8974.so:system/vendor/lib/hw/sensors.msm8974.so \
-    vendor/xiaomi/cancro/proprietary/lib/hw/lights.msm8974.so:system/lib/hw/lights.msm8974.so \
     vendor/xiaomi/cancro/proprietary/lib/hw/consumerir.msm8974.so:system/lib/hw/consumerir.msm8974.so \
     vendor/xiaomi/cancro/proprietary/etc/permissions/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
@@ -403,9 +414,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libsensor_test.so:system/vendor/lib/libsensor_test.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libsensor_user_cal.so:system/vendor/lib/libsensor_user_cal.so \
     vendor/xiaomi/cancro/proprietary/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
-    vendor/xiaomi/cancro/proprietary/bin/thermal-engine:system/bin/thermal-engine \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/xiaomi/cancro/proprietary/bin/hvdcp:system/bin/hvdcp \
     vendor/xiaomi/cancro/proprietary/bin/charger_monitor:system/bin/charger_monitor \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
@@ -443,16 +451,21 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
-    vendor/xiaomi/cancro/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/xiaomi/cancro/proprietary/bin/lowi-server:system/bin/lowi-server \
+    vendor/xiaomi/cancro/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
+    vendor/xiaomi/cancro/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libwifiscanner.so:system/vendor/lib/libwifiscanner.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libxtadapter.so:system/vendor/lib/libxtadapter.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
+    vendor/xiaomi/cancro/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
+    vendor/xiaomi/cancro/proprietary/lib/libstm-log.so:system/lib/libstm-log.so \
+    vendor/xiaomi/cancro/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
+    vendor/xiaomi/cancro/proprietary/lib/libstlport.so:system/lib/libstlport.so \
+    vendor/xiaomi/cancro/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    vendor/xiaomi/cancro/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
+    vendor/xiaomi/cancro/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/xiaomi/cancro/proprietary/bin/qosmgr:system/bin/qosmgr \
-    vendor/xiaomi/cancro/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
-    vendor/xiaomi/cancro/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
-    vendor/xiaomi/cancro/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
-    vendor/xiaomi/cancro/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
@@ -468,8 +481,4 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/lib/rfsa/adsp/libfastcvadsp.so:system/lib/rfsa/adsp/libfastcvadsp.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:system/lib/rfsa/adsp/libscveT2T_skel.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libsrsprocessing.so:system/vendor/lib/libsrsprocessing.so \
-    vendor/xiaomi/cancro/proprietary/usr/keylayout/atmel-maxtouch.kl:system/usr/keylayout/atmel-maxtouch.kl \
-    vendor/xiaomi/cancro/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    vendor/xiaomi/cancro/proprietary/usr/keylayout/msm8974-taiko-mtp-snd-card_Button_Jack.kl:system/usr/keylayout/msm8974-taiko-mtp-snd-card_Button_Jack.kl \
-    vendor/xiaomi/cancro/proprietary/usr/keylayout/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl
 
