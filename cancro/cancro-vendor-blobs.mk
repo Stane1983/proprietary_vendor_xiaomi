@@ -459,7 +459,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/xiaomi/cancro/proprietary/vendor/lib/libxtwifi_zpp_adaptor.so:system/vendor/lib/libxtwifi_zpp_adaptor.so \
     vendor/xiaomi/cancro/proprietary/lib/libstm-log.so:system/lib/libstm-log.so \
-    vendor/xiaomi/cancro/proprietary/lib/libcnefeatureconfig.so:system/lib/libcnefeatureconfig.so \
     vendor/xiaomi/cancro/proprietary/lib/libstlport.so:system/lib/libstlport.so \
     vendor/xiaomi/cancro/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     vendor/xiaomi/cancro/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
