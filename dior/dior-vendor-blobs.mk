@@ -224,6 +224,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libdsutils.so:system/vendor/lib/libdsutils.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
@@ -234,23 +237,27 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libqmi_common_so.so:system/vendor/lib/libqmi_common_so.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libqmi_csvt_srvc.so:system/vendor/lib/libqmi_csvt_srvc.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/xiaomi/dior/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so
-
-# Radio
-PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/bin/netmgrd:system/bin/netmgrd \
     vendor/xiaomi/dior/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/xiaomi/dior/proprietary/bin/radish:system/bin/radish \
+    vendor/xiaomi/dior/proprietary/bin/rfs_access:system/bin/rfs_access \
     vendor/xiaomi/dior/proprietary/bin/rmt_storage:system/bin/rmt_storage \
-    vendor/xiaomi/dior/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
+    vendor/xiaomi/dior/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/xiaomi/dior/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/xiaomi/dior/proprietary/framework/qcnvitems.jar:system/framework/qcnvitems.jar \
+    vendor/xiaomi/dior/proprietary/framework/qcrilhook.jar:system/framework/qcrilhook.jar \
+    vendor/xiaomi/dior/proprietary/framework/qti-telephony-common.jar:system/framework/qti-telephony-common.jar \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libasn1cper.so:system/vendor/lib/libasn1cper.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libasn1crt.so:system/vendor/lib/libasn1crt.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libasn1crtx.so:system/vendor/lib/libasn1crtx.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/xiaomi/dior/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
-    vendor/xiaomi/dior/proprietary/vendor/lib/libdsi_netctrl.so:system/vendor/lib/libdsi_netctrl.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
-    vendor/xiaomi/dior/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
+    vendor/xiaomi/dior/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so
 
