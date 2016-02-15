@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
+# Charger
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/dior/proprietary/bin/charger_monitor:system/bin/charger_monitor
+
 # Bluetooth
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/bin/btnvtool:system/bin/btnvtool \
