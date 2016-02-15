@@ -175,7 +175,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/dior/proprietary/etc/firmware/a330_pfp.fw:system/etc/firmware/a330_pfp.fw \
     vendor/xiaomi/dior/proprietary/etc/firmware/a330_pm4.fw:system/etc/firmware/a330_pm4.fw \
     vendor/xiaomi/dior/proprietary/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
-    vendor/xiaomi/dior/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/xiaomi/dior/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
